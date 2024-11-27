@@ -486,8 +486,8 @@ a {
 }
 
 h1 {
-  margin: 0px 20px 30px 50px; /* Reduz as margens para telas menores */
-  font-size: 20px;            /* Ajusta o tamanho da fonte */
+  margin: 18rem 30px 30px 30px; 
+  font-size: 20px;           
 }
 
 .container {
