@@ -1,0 +1,408 @@
+@font-face {
+  font-family: 'SaolDisplay';
+  src: url('../fonts/SaolDisplay-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SaolDisplay';
+  src: url('../fonts/SaolDisplay-RegularItalic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+
+html{
+  height: 100%;
+} 
+
+body {
+  background-color: #0D0F1D;
+  min-height: 100%; 
+  display: flex;
+  flex-direction: column; 
+  overflow: hidden;
+}
+.Logo {
+  display: inline-block; 
+  vertical-align: middle; 
+  color:#7fb591;
+  font-size:24px;
+  margin-top: -3px;
+}
+
+.Logo img {
+  display: inline-block; 
+  vertical-align: middle; 
+  width: 50px; 
+  height: auto; 
+}
+
+header{
+  display: flex;    
+  justify-content: space-between;     
+  padding: 30px;
+  gap: 5px;  
+}
+
+a{
+  color:#ede8ec;
+  text-decoration: none;
+  font-size: 25px;
+  text-shadow: 0.05em 0 0 rgba(115,190,176.75),
+    -0.025em -0.05em 0 rgba(93,131,138.75),
+    0.025em 0.05em 0 rgba(66,121,115.75);
+}
+
+.fullscreen-gif {
+  position: absolute; /* Permite que o GIF se ajuste em relação ao tamanho da página */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Largura da viewport */
+  height: 100vh; /* Altura da viewport */
+  object-fit: cover; /* Mantém o aspecto do GIF enquanto cobre a área */
+  opacity: 3%;
+  z-index: -1;
+}
+
+.chat-container{
+  font-size: 120px;
+  color: #EDE8EC;
+  font-family: "SaolDisplay";
+  margin-bottom: 200px;
+}
+
+.chat:nth-child(1){
+margin-left: 350px;
+color:#EDE8EC;
+-webkit-text-stroke-width: 1px; /* largura da borda */
+}
+
+.chat:nth-child(2){
+margin-left: 400px;
+margin-top: -50px;
+margin-bottom: -100px;
+color: transparent;
+-webkit-text-stroke-width: 1px; /* largura da borda */
+-webkit-text-stroke-color:#44AF92; /* cor da borda */
+}
+
+
+
+
+
+/* Estilos gerais para a form-container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+/* Estilos para as linhas do formulário */
+.form-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-row input, .form-row textarea {
+  width: 800px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.form-row input:focus, .form-row textarea:focus {
+  border-bottom: 1px solid #007BFF;
+  outline: none;
+}
+
+.form-row textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.fancy {
+  background-color: transparent;
+  border: 1px solid #EDE8EC;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 1.25em 2em;
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  font-size: 13px;
+}
+
+
+.fancy::before {
+content: " ";
+width: 1.5625rem;
+height: 2px;
+background: #44AF92;
+top: 50%;
+left: 1.5em;
+position: absolute;
+transform: translateY(-50%);
+transform-origin: center;
+transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancy .text {
+font-size: 1.125em;
+line-height: 1.33333em;
+padding-left: 2em;
+display: block;
+text-align: left;
+transition: all 0.3s ease-in-out;
+text-transform: uppercase;
+text-decoration: none;
+color: #EDE8EC;
+}
+
+.fancy .top-key {
+height: 2px;
+width: 1.5625rem;
+top: -2px;
+left: 0.625rem;
+position: absolute;
+background: #44AF92;
+transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+height: 2px;
+width: 1.5625rem;
+right: 1.875rem;
+bottom: -2px;
+position: absolute;
+background: #44AF92;
+transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+height: 2px;
+width: 0.625rem;
+right: 0.625rem;
+bottom: -2px;
+position: absolute;
+background: #44AF92;
+transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+color: EDE8EC;
+background: #44AF92;
+}
+
+.fancy:hover::before {
+width: 0.9375rem;
+background: white;
+}
+
+.fancy:hover .text {
+color: EDE8EC;
+padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+left: -2px;
+width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+.fancy:hover .bottom-key-2 {
+right: 0;
+width: 0;
+}
+
+footer{
+  position:absolute;
+  bottom: 40px;
+  left: 30px;   
+}
+
+
+@media (max-width: 600px){
+  
+  body{
+    overflow: hidden;
+  }
+  a {
+    font-size: 18px; /* Reduz o tamanho da fonte dos links */
+  }
+
+  .Logo {
+    font-size: 20px; /* Reduz o tamanho da logo */
+  }
+
+  .Logo img {
+    width: 40px; /* Diminui a imagem da logo */
+  }
+
+  a {
+    color: #ede8ec;
+    text-decoration: none;
+    font-size: 18px; /* Ajustado para telas menores */
+  }
+  
+  .chat-container {
+    font-size: 40px; /* Reduz o tamanho da citação */
+    margin-left:-11rem;
+  }
+  
+  .chat:nth-child(1) {
+    margin-left: 200px; /* Ajustado para telas menores */
+    margin-top: 20px; /* Ajustado para telas menores */
+  }
+  
+  .chat:nth-child(2) {
+    margin-left: 220px; /* Ajustado para telas menores */
+    margin-top: -10px; /* Ajustado para telas menores */
+    margin-bottom: 30px;
+  
+  }
+  
+   
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px; /* Ajustado para telas menores */
+  }
+  
+  .form-row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; /* Ajustado para telas menores */
+  }
+  
+  .form-row input, .form-row textarea {
+    width: 100%; /* Ajustado para telas menores */
+    padding: 8px; /* Ajustado para telas menores */
+    font-size: 14px; /* Ajustado para telas menores */
+  
+  }
+  
+  .form-row input:focus, .form-row textarea:focus {
+    border-bottom: 1px solid #007BFF;
+    outline: none;
+  }
+  
+  .form-row textarea {
+    resize: vertical;
+    height: 100px; /* Ajustado para telas menores */
+  }
+  
+  .fancy {
+    padding: 1em 1.5em; /* Ajustado para telas menores */
+    font-size: 12px; /* Ajustado para telas menores */
+  }
+  
+  .fancy::before {
+    width: 1rem; /* Ajustado para telas menores */
+    left: 1em; /* Ajustado para telas menores */
+  
+  }
+  
+  .fancy .text {
+    font-size: 0.875em; /* Ajustado para telas menores */
+    line-height: 1.33333em;
+    padding-left: 1.5em; /* Ajustado para telas menores */
+  }
+  
+  .fancy .top-key {
+    width: 1rem; /* Ajustado para telas menores */
+    left: 0.5rem; /* Ajustado para telas menores */
+  }
+  
+  .fancy .bottom-key-1 {
+    width: 1rem; /* Ajustado para telas menores */
+    right: 1.5rem; /* Ajustado para telas menores */
+  }
+  
+  .fancy .bottom-key-2 {
+    height: 2px;
+    width: 0.5rem; /* Ajustado para telas menores */
+    right: 0.5rem; /* Ajustado para telas menores */
+  }
+  
+  .fancy:hover {
+    color: #EDE8EC;
+    background: #44AF92;
+  }
+  
+  .fancy:hover::before {
+    width: 0.75rem; /* Ajustado para telas menores */
+    background: white;
+  }
+  
+  .fancy:hover .text {
+    color: #EDE8EC;
+    padding-left: 1em; /* Ajustado para telas menores */
+  }
+  
+  .fancy:hover .top-key {
+    left: -1px;
+    width: 0;
+  }
+  
+
+   footer {
+    position: absolute;
+    bottom: 20px; /* Ajustado para telas menores */
+    left: 20px; /* Ajustado para telas menores */
+  }
+}
+
+
+
+/* Estilos específicos para 125% de escala */
+@media  (min-resolution: 120dpi) and (max-resolution: 143dpi) {
+      
+  .chat-container{
+    font-size: 120px;
+    color: #EDE8EC;
+    font-family: "SaolDisplay";
+    margin-top: -50px;
+  }
+  
+  .chat:nth-child(1){
+  margin-left: 350px;
+  color:#EDE8EC;
+  -webkit-text-stroke-width: 1px; /* largura da borda */
+  }
+  
+  .chat:nth-child(2){
+  margin-left: 400px;
+  margin-top: -50px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px; /* largura da borda */
+  -webkit-text-stroke-color:#44AF92; /* cor da borda */
+  }
+
+  
+}

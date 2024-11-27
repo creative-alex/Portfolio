@@ -1,0 +1,253 @@
+@font-face {
+  font-family: 'SaolDisplay';
+  src: url('../fonts/SaolDisplay-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SaolDisplay';
+  src: url('../fonts/SaolDisplay-RegularItalic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+
+
+html{
+  height: 100%;
+} 
+body{
+    background-color: #0D0F1D;
+    min-height: 100%; 
+    display: flex;
+    flex-direction: column;   
+    position: relative; 
+}
+a{
+  color:#ede8ec;
+  text-decoration: none;
+  font-size: 25px;
+}  
+
+
+header{
+  display: flex;    
+  justify-content: space-between;     
+  padding: 30px;
+  z-index: 1;
+}
+.Logo {
+  display: inline-block; 
+  vertical-align: middle; 
+  color:#7fb591;
+  font-size:24px;
+  margin-bottom: 3px;
+}
+
+.Logo img {
+  display: inline-block; 
+  vertical-align: middle; 
+  width: 50px; 
+  height: auto; 
+}
+
+.fullscreen-gif {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh; 
+  background-image: url(images/fundo.gif);
+  background-size: cover;
+  z-index: -1;
+  opacity: 3%;
+}
+
+.profile-container {
+  font-size: 18rem;
+  color: #EDE8EC;
+  font-family: "SaolDisplay";
+  position: relative;
+  z-index: -1;
+}
+
+.profile {
+  position: relative;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #44AF92;
+}
+
+.profile:nth-child(1) {
+  margin-left: 100px; /* Ajuste menor para centralizar melhor */
+  margin-top: 0; /* Sem margem superior negativa no primeiro */
+  color: #EDE8EC;
+  -webkit-text-stroke-color: transparent;
+}
+
+.profile:nth-child(2) {
+  margin-left: 150px;
+  margin-top: -100px; /* Aumenta o espaçamento vertical */
+}
+
+.profile:nth-child(3) {
+  margin-left: 250px;
+  margin-top: -100px; /* Aumenta o espaçamento vertical */
+}
+
+.profile:nth-child(4) {
+  margin-left: 350px;
+  margin-top: -100px; /* Aumenta o espaçamento vertical */
+}
+
+ 
+.about-me {
+  max-width: 800px; /* Limita a largura para garantir boa legibilidade */
+  line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
+  font-size: 24px; /* Tamanho da fonte ajustado */
+  margin-left: 25%;
+}
+
+.about-me p {
+  margin-bottom: 20px; /* Espaçamento entre parágrafos */
+  color: #EDE8EC;
+}
+
+
+
+.hobbies-container {
+  font-size: 90px;
+  color: #EDE8EC;
+  font-family: "SaolDisplay";
+  position: relative;
+  padding-top: 200px;
+  z-index: -1;
+}
+
+.hobbie {
+  position: relative;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #44AF92;
+}
+
+.hobbie:nth-child(1) {
+  margin-left: 100px; /* Ajuste menor para centralizar melhor */
+  margin-top: 0; /* Sem margem superior negativa no primeiro */
+  color: #EDE8EC;
+  -webkit-text-stroke-color: transparent;
+}
+
+.hobbie:nth-child(2) {
+  margin-left: 150px;
+  margin-top: -25px; /* Aumenta o espaçamento vertical */
+}
+
+
+
+.interests {
+  max-width: 800px; /* Limita a largura para garantir boa legibilidade */
+  line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
+  font-size: 24px; /* Tamanho da fonte ajustado */
+  margin-left: 25%;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.interests p {
+  margin-bottom: 20px; /* Espaçamento entre parágrafos */
+  color: #EDE8EC;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+ 
+    a {
+      font-size: 18px; /* Reduz o tamanho da fonte dos links */
+    }
+    header{
+      display: flex;    
+      justify-content: space-between;     
+      padding: 30px;
+      gap: 5px;  
+    }
+
+    .Logo {
+      font-size: 20px; /* Reduz o tamanho da logo */
+    }
+  
+    .Logo img {
+      width: 40px; /* Reduz o tamanho da imagem da logo */
+    }
+  
+    .profile-container {
+      font-size: 80px;/* Reduz o tamanho da fonte */
+    }
+  
+    .profile:nth-child(1) {
+      margin-left: 10px; /* Ajusta as margens para centralizar melhor */
+    }
+  
+    .profile:nth-child(2) {
+      margin-left: 30px;
+      margin-top: -30px; /* Ajuste de espaçamento */
+    }
+  
+    .profile:nth-child(3) {
+      margin-left: 50px;
+      margin-top: -30px;
+    }
+  
+    .profile:nth-child(4) {
+      margin-left: 60px;
+      margin-top: -30px;
+    }
+  
+    .about-me {
+      font-size: 18px; /* Reduz o tamanho da fonte para melhor legibilidade */
+      margin-left: 10%; /* Reduz a margem para centralizar melhor em telas pequenas */
+      max-width: 90%; /* Limita a largura do texto */
+    }
+  
+    .hobbies-container {
+      font-size: 60px; /* Reduz o tamanho da fonte */
+      padding-top: 50px; /* Reduz o espaçamento superior */
+    }
+  
+    .hobbie:nth-child(1) {
+      margin-left: 20px; /* Ajusta as margens para centralizar melhor */
+    }
+  
+    .hobbie:nth-child(2) {
+      margin-left: 40px;
+      margin-top: -20px; /* Ajusta o espaçamento vertical */
+    }
+  
+    .interests {
+      font-size: 18px; /* Reduz o tamanho da fonte */
+      margin-left: 10%; /* Reduz a margem para centralizar melhor */
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+  }
+
+
+/* Estilos específicos para 125% de escala */
+  @media screen and (min-resolution: 120dpi) and (max-resolution: 143dpi) {
+      
+    .profile-container {
+      font-size: 14rem;
+      color: #EDE8EC;
+      font-family: "SaolDisplay";
+      position: relative;
+      z-index: -1;
+    }
+    
+  
+    
+  }
