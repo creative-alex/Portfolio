@@ -42,7 +42,7 @@ function eraseText(element, callback) {
 // Função para gerenciar a animação de digitação no elemento 'world'
 function startWorldTypingAnimation() {
   const worldElement = document.getElementById('world-text'); // Atualizado para 'world-text'
-  const texts = ['World !!', 'There !!', 'Friend ツ'];
+  const texts = ['World!!', 'There!!', 'Friend!!'];
   let index = 0;
 
   function nextText() {
