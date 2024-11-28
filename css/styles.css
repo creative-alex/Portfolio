@@ -37,7 +37,7 @@ body{
 a{
     color:#ede8ec;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     text-shadow: 0.05em 0 0 rgba(115,190,176.75),
     -0.025em -0.05em 0 rgba(93,131,138.75),
     0.025em 0.05em 0 rgba(66,121,115.75);
@@ -91,6 +91,11 @@ a{
 }
 
 @media (max-width: 767px) {
+
+  a{
+    font-size: 20px;
+    margin-top: 10px;
+  }
   /*Hello*/
   .mid-text blockquote span {
       margin-left: calc(-30vw); 

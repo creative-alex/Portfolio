@@ -37,8 +37,7 @@ body {
   display: inline-block; 
   vertical-align: middle; 
   width: 50px; 
-  height: auto; 
-}
+  heigh
 
 header{
   display: flex;    
@@ -57,12 +56,12 @@ a{
 }
 
 .fullscreen-gif {
-  position: absolute; /* Permite que o GIF se ajuste em relação ao tamanho da página */
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100vw; /* Largura da viewport */
-  height: 100vh; /* Altura da viewport */
-  object-fit: cover; /* Mantém o aspecto do GIF enquanto cobre a área */
+  width: 100vw; 
+  height: 100vh; 
+  object-fit: cover; 
   opacity: 3%;
   z-index: -1;
 }
@@ -77,7 +76,7 @@ a{
 .chat:nth-child(1){
 margin-left: 350px;
 color:#EDE8EC;
--webkit-text-stroke-width: 1px; /* largura da borda */
+-webkit-text-stroke-width: 1px; 
 }
 
 .chat:nth-child(2){
@@ -85,8 +84,8 @@ margin-left: 400px;
 margin-top: -50px;
 margin-bottom: -100px;
 color: transparent;
--webkit-text-stroke-width: 1px; /* largura da borda */
--webkit-text-stroke-color:#44AF92; /* cor da borda */
+-webkit-text-stroke-width: 1px; 
+-webkit-text-stroke-color:#44AF92; 
 }
 
 
@@ -247,40 +246,37 @@ footer{
 
 @media (max-width: 600px){
   
-  body{
-    overflow: hidden;
-  }
   a {
-    font-size: 18px; /* Reduz o tamanho da fonte dos links */
+    font-size: 18px; 
   }
 
   .Logo {
-    font-size: 20px; /* Reduz o tamanho da logo */
+    font-size: 20px;
   }
 
   .Logo img {
-    width: 40px; /* Diminui a imagem da logo */
+    width: 40px; 
   }
 
   a {
     color: #ede8ec;
     text-decoration: none;
-    font-size: 18px; /* Ajustado para telas menores */
+    font-size: 18px;
   }
   
   .chat-container {
-    font-size: 40px; /* Reduz o tamanho da citação */
+    font-size: 40px; 
     margin-left:-11rem;
   }
   
   .chat:nth-child(1) {
-    margin-left: 200px; /* Ajustado para telas menores */
-    margin-top: 20px; /* Ajustado para telas menores */
+    margin-left: 200px; 
+    margin-top: 20px; 
   }
   
   .chat:nth-child(2) {
-    margin-left: 220px; /* Ajustado para telas menores */
-    margin-top: -10px; /* Ajustado para telas menores */
+    margin-left: 220px; 
+    margin-top: -10px; 
     margin-bottom: 30px;
   
   }
@@ -290,20 +286,20 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 50px; /* Ajustado para telas menores */
+    margin-top: -10rem; 
   }
   
   .form-row {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px; /* Ajustado para telas menores */
+    margin-bott
   }
   
   .form-row input, .form-row textarea {
-    width: 100%; /* Ajustado para telas menores */
-    padding: 8px; /* Ajustado para telas menores */
-    font-size: 14px; /* Ajustado para telas menores */
+    wid
+    padd
+    font-si
   
   }
   
@@ -314,40 +310,40 @@ footer{
   
   .form-row textarea {
     resize: vertical;
-    height: 100px; /* Ajustado para telas menores */
+    height
   }
   
   .fancy {
-    padding: 1em 1.5em; /* Ajustado para telas menores */
-    font-size: 12px; /* Ajustado para telas menores */
+    padding: 1e
+    font-si
   }
   
   .fancy::before {
-    width: 1rem; /* Ajustado para telas menores */
-    left: 1em; /* Ajustado para telas menores */
+    widt
+    le
   
   }
   
   .fancy .text {
-    font-size: 0.875em; /* Ajustado para telas menores */
+    font-size: 0
     line-height: 1.33333em;
-    padding-left: 1.5em; /* Ajustado para telas menores */
+    padding-left:
   }
   
   .fancy .top-key {
-    width: 1rem; /* Ajustado para telas menores */
-    left: 0.5rem; /* Ajustado para telas menores */
+    width
+    left: 
   }
   
   .fancy .bottom-key-1 {
-    width: 1rem; /* Ajustado para telas menores */
-    right: 1.5rem; /* Ajustado para telas menores */
+    width:
+    right: 
   }
   
   .fancy .bottom-key-2 {
     height: 2px;
-    width: 0.5rem; /* Ajustado para telas menores */
-    right: 0.5rem; /* Ajustado para telas menores */
+    width: 0.
+    right: 0.5
   }
   
   .fancy:hover {
@@ -356,13 +352,13 @@ footer{
   }
   
   .fancy:hover::before {
-    width: 0.75rem; /* Ajustado para telas menores */
+    width: 0.75r
     background: white;
   }
   
   .fancy:hover .text {
     color: #EDE8EC;
-    padding-left: 1em; /* Ajustado para telas menores */
+    padding-left: 1e
   }
   
   .fancy:hover .top-key {
@@ -373,8 +369,8 @@ footer{
 
    footer {
     position: absolute;
-    bottom: 20px; /* Ajustado para telas menores */
-    left: 20px; /* Ajustado para telas menores */
+    bottom: 20px
+    left: 20px;
   }
 }
 
@@ -393,15 +389,15 @@ footer{
   .chat:nth-child(1){
   margin-left: 350px;
   color:#EDE8EC;
-  -webkit-text-stroke-width: 1px; /* largura da borda */
+  -webkit-text-stroke-width: 1px; 
   }
   
   .chat:nth-child(2){
   margin-left: 400px;
   margin-top: -50px;
   color: transparent;
-  -webkit-text-stroke-width: 1px; /* largura da borda */
-  -webkit-text-stroke-color:#44AF92; /* cor da borda */
+  -webkit-text-stroke-width: 1px; 
+  -webkit-text-stroke-color:#44AF92;
   }
 
   

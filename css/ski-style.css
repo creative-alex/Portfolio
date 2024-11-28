@@ -83,25 +83,31 @@ header{
 }
 
 @media (max-width: 767px){
+  body{
+    overflow-x: hidden;
+  }
+  a {
+    font-size: 18px;
+   }
    /*Skills &*/
-.mid-text blockquote span {
-  font-size: 7rem; 
+.mid-text blockquote span {  
+  font-size: 4rem; 
   display: flex;
   justify-content: center; 
-  align-items: center; 
-  margin-right: 5rem;
-  margin-top: -5rem;
-  height: 40vh; 
+  margin-bottom: -5rem;
+  margin-top: 10rem;  
+  margin-right: 10rem;
+  height: 20vh; 
 }
 
 /*Certifications*/
 .lower-mid-text blockquote {
-  font-size: 8rem;
+  font-size: 3.8rem;
   display: flex;
   justify-content: center; 
   align-items: center;
-  margin-top: -5rem;
-  margin-right: 5rem;
+  margin-bottom: 14rem;
+ 
   
 }
 }
@@ -139,10 +145,11 @@ header{
 }
 
 .c_scrolldown {
+  position:absolute;
   width: 2px;
   height: 20rem;
-  margin: 0 auto;
-  margin-bottom: -30px;
+  
+  right: 30px;
 }
 
 .c_scrolldown .c_line {
@@ -152,32 +159,14 @@ header{
   background: linear-gradient(180deg, #44AF92 50%, hsla(0, 0%, 100%, 0) 0);
   background-position: 0 -10rem;
   background-size: 100% 200%;
-  animation: scrolldown 3s linear infinite forwards;
 }
 
-@keyframes scrolldown {
-  0% {
-    background-position: 0 -15rem;
-  }
-  25% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 0 10rem;
-  }
-  75% {
-    background-position: 0 15rem; 
-  }
-  100% {
-    background-position: 0 20rem;
-  }
-}
 
 .c_scrollcenter {
   position: absolute;
-  top: 56.1%; /* Centraliza verticalmente em relação ao texto */
-  left: 600px; /* Ajuste a distância da animação em relação ao texto */
-  width: 73rem; /* Ajuste a largura conforme necessário */
+  top: 56.1%; 
+  left: 600px; 
+  width: 73rem; 
   height: 2px;
 }
 
@@ -188,51 +177,12 @@ header{
   background: linear-gradient(270deg, #44AF92 50%, hsla(0, 0%, 100%, 0) 0);
   background-position: 73rem 0; /* Começa à direita */
   background-size: 200% 100%;
-  animation: scrollcenter 5s linear infinite forwards; /* Aumentei o tempo total */
-  animation-delay: 3s;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
  .c_scrollcenter{
   display: none;
  }
-}
-
-
-@keyframes scrollcenter {
-  0% {
-    background-position: 83rem 0; /* Começa no extremo direito */
-  }
-  10% {
-    background-position: 75rem 0; /* Movendo-se lentamente para a esquerda */
-  }
-  20% {
-    background-position: 58rem 0; /* Continuação do movimento */
-  }
-  30% {
-    background-position: 48rem 0; /* Movimento suave */
-  }
-  40% {
-    background-position: 38rem 0; /* Aproxima-se do centro */
-  }
-  50% {
-    background-position: 20rem 0; /* Passa pelo meio */
-  }
-  60% {
-    background-position: 10rem 0; /* Acelera suavemente */
-  }
-  70% {
-    background-position: 5rem 0; /* Quase na extremidade esquerda */
-  }
-  80% {
-    background-position: 2rem 0; /* Muito perto da extremidade */
-  }
-  90% {
-    background-position: -5rem 0; /* Aproxima-se da extremidade esquerda */
-  }
-  100% {
-    background-position: -10rem 0; /* Termina além do extremo esquerdo */
-  }
 }
 
 .r_scrolldown{
@@ -250,33 +200,27 @@ header{
   background: linear-gradient(180deg, #44AF92 50%, hsla(0, 0%, 100%, 0) 0);
   background-position: 0 -10rem;
   background-size: 100% 200%;
-  animation: l_scrolldown 4s linear infinite forwards;
 }
-@keyframes l_scrolldown {
-  0% {
-    background-position: 0 -30rem;
-  }
-  25% {
-    background-position: 0 10;
-  }
-  50% {
-    background-position: 0 15rem;
-  }
-  75% {
-    background-position: 0 25rem; 
-  }
-  100% {
-    background-position: 0 40rem;
-  }
 
+
+@media (max-width: 767px){
+  .c_scrolldown{
+    margin-left: 10px;
+    height: 20rem;
+  }
+  .r_scrolldown{
+    height: 35rem;
+    margin-bottom: -60rem;
+
+  }
 }
+
 
 /*Aqui começa "RELEVANT CERTIFICATIONS"*/
 
 h1 {
-  margin: 0 0 30px 30px;
+  margin: -9rem 0 30px 30px;
   font-family: "SaolDisplay", sans-serif;
-  font-size: 2.5rem;
   color: #ede8ec;
 }
 
@@ -323,37 +267,48 @@ h2{
 }
 
 @media (max-width: 767px) {
+  .c_scrollcenter{
+    display: none;
+  }
+
   h1 {
     display: flex;
     justify-content: center;
-    text-align: center;
-    font-size: 2rem; /* Reduz o tamanho da fonte */
-    margin: 0 0 20px 20px; /* Ajuste das margens */
+    font-size: 1.3rem; 
+    white-space: nowrap;
+    margin-right: 30px;
   }
 
-  .container {
-    max-width: 100%; /* Garante que o container ocupe a largura total */
-    padding: 20px; /* Reduz o padding para telas pequenas */
-    gap: 20px; /* Ajusta o gap entre os itens */
+  h2{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    margin-right: 30px;
+  }
+
+  .container {    
+    margin-top: 25rem;  
   }
 
   .certification {
-    grid-template-columns: 1fr; /* Coloca todos os itens em uma única coluna */
-    gap: 20px 10px; /* Ajuste do espaçamento entre as linhas e colunas */
+    grid-template-columns: 1fr;
+    gap: 20px 10px; 
   }
 
   .date, .year {
-    font-size: 1.5rem; /* Reduz o tamanho da fonte */
+    font-size: 1.5rem; 
   }
 
   .cert-title {
-    font-size: 1.5rem; /* Ajusta o tamanho da fonte */
     margin-top: -20px;
-  }
+  } 
 
-  .cert-details {
-    font-size: 0.875rem; /* Ajusta o tamanho da fonte para telas pequenas */
+  .date, .year, .cert-title, .cert-details {
+    font-size: 1.5rem;           
+    white-space: nowrap;
+  
   }
+ 
+
 }
 
 
@@ -409,6 +364,14 @@ h2{
   transform: translateY(-50px) scale(1.2);
 }
 
+@media (max-width: 767px){
+  .slider {
+    width: 100px; /* Reduz o tamanho do slider */
+    height: 100px; /* Reduz o tamanho do slider */
+  }
+}
+
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .slider {
     width: 150px; /* Reduz o tamanho do slider */
@@ -429,83 +392,17 @@ h2{
 /*Telemoveis medios/grandes ig*/
 @media (max-width: 600px) {
   
-body{
-  width: 100vw;
-  overflow-x: hidden;
-}
 
-
-header {
-      padding: 30px;
-  } 
-a {
-      font-size: 18px;
-  }
- 
-.Logo {
-      font-size: 20px;
-  }
-
-.Logo img {
-      width: 40px;
-  }
-
-
-  /*Texto do Meio*/
-.mid-text blockquote span {
-    margin-top: 100px;
-    font-size: 3.5rem; /* Reduz o tamanho da citação */
-    margin-left: -7rem; /* Mantém o deslocamento menor */
-    margin-bottom: 0px;
-  }
-
-.lower-mid-text blockquote {
-    font-size: 3.5rem; /* Reduz o tamanho da citação secundária */
-    padding-bottom: 6rem;
-    margin-left: 4rem;
-  }
-
-  /*Botoes de baixo*/
-.bottom-menu {
-    
-      margin: 10px;
-  }
-
-.c_scrolldown {
-    width: 2px;
-    height: 20rem;
-    margin-right: -10px;
-    margin-bottom: -30px;
-  }
 
  
 /*Certificados*/
-
-.c_scrollcenter{
-  display: none;
-}
-
-h1 {
-  margin: 18rem 30px 30px 30px; 
-  font-size: 20px;           
-}
-
-.container {
-  max-width: 100%;             /* Garante que o conteúdo ocupe toda a largura da tela */
-  padding: 20px;               /* Reduz o padding para telas pequenas */
-}
-
 .certification {
   margin-top: 20px;
   grid-template-columns: 1fr;  /* Coloca os elementos em uma coluna em vez de duas */
   gap: 10px;                   /* Reduz o espaçamento entre os elementos */
 }
 
-.certification:nth-child(1),
-.certification:nth-child(2),
-.certification:nth-child(3) {
-  margin-left: 40px;
-}
+
 
 .date, .year, .cert-title, .cert-details {
   font-size: 13px;           
@@ -542,13 +439,7 @@ h1 {
   }
 
 
-.r_scrolldown{
-    width: 2px;
-    height: 23rem;
-    margin-top: -50px;
-    margin-bottom: -20rem;
-    margin-left: 20px;
-  }
+
 
 
 }
