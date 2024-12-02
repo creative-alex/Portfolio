@@ -60,56 +60,81 @@ header{
     height: auto; 
 }  
 .mid-text blockquote span{
-    display: flex;    
-    justify-content: center;
-    align-items: center;
-    margin-right: 30rem;
-    font-family: "SaolDisplay";
-    font-size: 14rem;
-    font-weight: thin;
-    color:#EDE8EC;
-    white-space: nowrap;
+  display: flex;    
+  justify-content: center;
+  align-items: center;
+  margin-right: 30rem;
+  font-family: "SaolDisplay";
+  font-size: 14rem;
+  font-weight: thin;
+  color:#EDE8EC;
+  white-space: nowrap;
 }
 .lower-mid-text blockquote{
-    display: flex;    
-    justify-content: center;
-    align-items: center; 
-    margin: 0;
-    font-family: "SaolDisplay";
-    font-size: 15rem;
-    color: transparent;
-  -webkit-text-stroke-width: 1px; 
-  -webkit-text-stroke-color:#44AF92; 
+  display: flex;    
+  justify-content: center;
+  align-items: center; 
+  margin: 0;
+  font-family: "SaolDisplay";
+  font-size: 15rem;
+  color: transparent;
+-webkit-text-stroke-width: 1px; 
+-webkit-text-stroke-color:#44AF92; 
 }
 
 @media (max-width: 767px){
-  body{
-    overflow-x: hidden;
-  }
-  a {
-    font-size: 18px;
-   }
-   /*Skills &*/
+body{
+  overflow-x: hidden;
+}
+a {
+  font-size: 18px;
+ }
+ /*Skills &*/
 .mid-text blockquote span {  
-  font-size: 4rem; 
-  display: flex;
-  justify-content: center; 
-  margin-bottom: -5rem;
-  margin-top: 10rem;  
-  margin-right: 10rem;
-  height: 20vh; 
+font-size: 4rem; 
+display: flex;
+justify-content: center; 
+margin-bottom: -5rem;
+margin-top: 10rem;  
+margin-right: 10rem;
+height: 20vh; 
 }
 
 /*Certifications*/
 .lower-mid-text blockquote {
-  font-size: 3.8rem;
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  margin-bottom: 14rem;
- 
-  
+font-size: 3.8rem;
+display: flex;
+justify-content: center; 
+align-items: center;
+margin-bottom: 14rem;
+
+
 }
+}
+@media (orientation: landscape) and (max-height: 450px) {
+
+ 
+  /*Skills &*/
+  .mid-text blockquote span {  
+    font-size: 1rem; /* Ajusta o tamanho para caber melhor em paisagem */
+    display: flex;
+    justify-content: center; 
+    margin-bottom: -3rem; /* Ajusta margens para um layout mais proporcional */
+    margin-top: 5rem;  
+    margin-right: 5rem;
+    height: 15vh; /* Altura ajustada para paisagem */
+  }
+
+  /*Certifications*/
+  .lower-mid-text blockquote {
+    font-size: 2rem; /* Tamanho do texto ajustado */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem; /* Menor espaço para maior legibilidade */
+  }
+  
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

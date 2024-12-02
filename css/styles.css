@@ -37,7 +37,7 @@ body{
 a{
     color:#ede8ec;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.5vw;
     text-shadow: 0.05em 0 0 rgba(115,190,176.75),
     -0.025em -0.05em 0 rgba(93,131,138.75),
     0.025em 0.05em 0 rgba(66,121,115.75);
@@ -68,82 +68,66 @@ a{
 }
 
 
+
   /*Hello*/
 .mid-text blockquote span {
     margin-left: calc(-25vw); 
     display: flex;
     justify-content: center;
     font-family: "SaolDisplay";
-    font-size: 13rem;
+    font-size: clamp(15vw, 25vw, 30vw);
     color: #EDE8EC;
 }
 
 /*World*/  
 .lower-mid-text blockquote{
-    margin-top: calc(-10vh);    
+    margin-top: calc(-5vh);    
     display: flex;    
     justify-content: center;
     align-items: center; 
     font-family: "SaolDisplay";
-    font-size: 15rem;
-    font-weight: thin;
+    font-size: clamp(15vw, 25vw, 30vw);
     color:#EDE8EC
 }
 
-@media (max-width: 767px) {
 
-  a{
+@media (orientation: landscape) {
+ 
+  .mid-text blockquote span {
+    font-size: clamp(5vw, 10vw, 15vw);
+  }
+  .lower-mid-text blockquote {
+    font-size: clamp(5vw, 10vw, 15vw);
+  }
+  
+  
+  /* Regras adicionais para dispositivos móveis em landscape */
+  @media screen and (max-height: 450px) {
+    main {
+      margin-top: -50px;
+    }
+    .mid-text blockquote span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #display figcaption, #display p {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  a {
     font-size: 20px;
-    margin-top: 10px;
   }
-  /*Hello*/
   .mid-text blockquote span {
-      margin-left: calc(-30vw); 
-      font-size: 6rem;
-      display: flex;
-      justify-content: center; 
-      align-items: center; 
-      height: 40vh;
+    margin-left: calc(-30vw); 
+    margin-top: 10vh; 
   }
-
-  /*World*/
-  .lower-mid-text blockquote {
-      margin-top: calc(-5vh); 
-      font-size: 7rem; 
-      font-weight: 300; 
-      display: flex;
-      justify-content: center; 
-      align-items: center; 
-      height: 1vh; 
-  }
-
-
 }
 
 
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /*Hello*/
-  .mid-text blockquote span {
-      margin-left: calc(-20vw); /* Ajuste da margem para telas médias */
-      font-size: 10rem; /* Ajuste do tamanho da fonte para telas médias */
-      display: flex;
-      justify-content: center; /* Centraliza horizontalmente */
-      align-items: center; /* Centraliza verticalmente */
-      height: 40vh; /* Garantir altura do elemento */
-  }
-
-  /*World*/
-  .lower-mid-text blockquote {
-      margin-top: calc(-8vh); /* Ajuste da margem superior para telas médias */
-      font-size: 12rem; /* Ajuste do tamanho da fonte para telas médias */
-      font-weight: 300; /* Substituindo 'thin' por um valor válido */
-      display: flex;
-      justify-content: center; /* Centraliza horizontalmente */
-      align-items: center; /* Centraliza verticalmente */
-      height: 10vh; /* Garantir altura do elemento */
-  }
-}
 
 
 

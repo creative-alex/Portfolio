@@ -102,12 +102,54 @@ header{
   margin-top: -100px; /* Aumenta o espaçamento vertical */
 }
 
+@media (orientation: landscape) {
+  .profile-container {
+    font-size: 15vw; /* Ajustado para uma escala proporcional à largura da viewport */
+    color: #EDE8EC;
+    font-family: "SaolDisplay";
+    position: relative;
+    z-index: -1;
+  }
+
+  .profile {
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #44AF92;
+  }
+
+  .profile:nth-child(1) {
+    margin-left: 50px; /* Ajuste menor para melhor centralização em paisagem */
+    margin-top: 10px; /* Suaviza o espaçamento superior */
+    color: #EDE8EC;
+    -webkit-text-stroke-color: transparent;
+  }
+
+  .profile:nth-child(2) {
+    margin-left: 120px; /* Ajustado para layout mais proporcional */
+    margin-top: -30px; /* Reduzido para um espaçamento mais consistente */
+  }
+
+  .profile:nth-child(3) {
+    margin-left: 200px; /* Margem menor em paisagem */
+    margin-top: -30px; /* Reduzido para manter alinhamento */
+  }
+
+  .profile:nth-child(4) {
+    margin-left: 300px; /* Ajuste proporcional para paisagem */
+    margin-top: -30px; /* Consistência no espaçamento */
+  }
+}
+
  
 .about-me {
-  max-width: 800px; /* Limita a largura para garantir boa legibilidade */
-  line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
-  font-size: 24px; /* Tamanho da fonte ajustado */
-  margin-left: 25%;
+  max-width: 800px; 
+  line-height: 1.6; 
+  font-size: 24px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-me p {

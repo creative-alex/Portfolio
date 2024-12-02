@@ -23,24 +23,25 @@
   </div> 
 
   <main class="form-container">
-    <form>
+    <form action="https://formspree.io/f/mpwzopwk" method="POST">
       <div class="form-row">
-        <input type="text" id="name" name="name" placeholder="Your Name">
-        <input type="email" id="email" name="email" placeholder="Your Email">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
       </div>
       <div class="form-row">
         <input type="text" id="subject" name="subject" placeholder="Subject">
       </div>
       <div class="form-row">
-        <textarea id="message" name="message" placeholder="Message"></textarea>
+        <textarea id="message" name="message" placeholder="Message" required></textarea>
       </div>
-      <button class="fancy" href="#">
+      <button class="fancy" type="submit">
         <span class="top-key"></span>
         <span class="text">SUBMIT</span>
         <span class="bottom-key-1"></span>
         <span class="bottom-key-2"></span>
       </button>  
     </form>
+    
   </main>
 
   <footer>
